@@ -140,6 +140,20 @@ inKorisnikIme.addEventListener('keypress', e => {
     }
 });
 
+radios.forEach(radio => {
+    radio.addEventListener('change', () => {
+        if (inKorisnikIme.value != '' && inKorisnikIme.value != null && inKorisnikIme.value.length < 20) {
+            if (vreme) {
+                clearInterval(vreme);
+                sekunde = -1;
+            }
+            generisanjeSlikaIPoledjina();
+        } else {
+            alert('Korisničko ime nije ispravno uneseno!');
+        }
+    });
+});
+
 let otvoreneSlike = [];
 let kliknutePoledjine = [];
 let igraAktivna = true;
