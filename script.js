@@ -85,11 +85,13 @@ velicinaSlika('lako');
 let vreme;
 let sekunde = -1;
 let brojParova = [];
+let brKlikova = 0;
 
 let generisanjeSlikaIPoledjina = () => {
     dIspisSlika.innerHTML = '';
     dIspisPoledjina.innerHTML = '';
     brojParova = [];
+    brKlikova = 0;
 
     vreme =  setInterval(() => {
         sekunde++;
@@ -140,7 +142,6 @@ inKorisnikIme.addEventListener('keypress', e => {
 
 let otvoreneSlike = [];
 let kliknutePoledjine = [];
-let brKlikova = 0;
 let igraAktivna = true;
 let odgovor;
 let nizKorisnika = JSON.parse(localStorage.getItem('korisnici')) || [];
