@@ -1,2 +1,2 @@
-# Igra-me
+# Igra memorije
 Memory game
