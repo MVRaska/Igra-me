@@ -339,7 +339,6 @@ let top5 = (tezina) => {
                 document.getElementById(`vreme${i + 1}`).innerHTML = sortiranNiz[i] ? sortiranNiz[i].vreme : '';
             }
         }  else {
-            // Resetujte sadržaj tabele ako nema rezultata za ovu težinu
             for (let i = 0; i < 5; i++) {
                 document.getElementById(`ime${i + 1}`).innerHTML = '';
                 document.getElementById(`vreme${i + 1}`).innerHTML = '';
