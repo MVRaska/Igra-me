@@ -68,7 +68,7 @@ let velicinaSlika = tezina => {
             procenatSirine = 10;
             break;
         case 'expert':
-            procenatSirine = 8;
+            procenatSirine = 9;
             break;
         default:
             procenatSirine = 20;
